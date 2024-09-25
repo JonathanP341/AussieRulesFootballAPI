@@ -133,8 +133,7 @@ function setGames(gamesArray, row, col, sheet, aggregate) {
         games.push(temp); //Adding to the games array
     }
     //Printing the sheet
-    Logger.log(games);
-    //sheet.getRange(row, col, 1, gamesArray.length).setValues([games]);
+    sheet.getRange(row, col, 1, gamesArray.length).setValues([games]);
 }
 
 function findFavourite(ateam, hteam, aggregate) {
